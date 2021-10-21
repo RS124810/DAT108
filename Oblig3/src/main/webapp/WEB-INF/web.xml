@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee" 
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee 
+	http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" 
+	id="WebApp_ID" 
+	version="4.0">
+	
+  <display-name>F17a - web.xml og initparams</display-name>
+  
+  <welcome-file-list>
+    <welcome-file>loginn</welcome-file>
+  </welcome-file-list>
+  
+   <context-param>
+    <param-name>logut</param-name>
+    <param-value>60</param-value>
+  </context-param>  
+
+  <servlet>
+    <servlet-name>loginServlet</servlet-name>
+    <servlet-class>oppgave1.LoggInnServlet</servlet-class>
+    <init-param>
+      <param-name>passord</param-name>
+      <param-value>handle</param-value>
+      
+    </init-param>
+  </servlet>
+
+</web-app>
