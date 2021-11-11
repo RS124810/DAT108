@@ -20,11 +20,11 @@
 	<form method="post" class="pure-form pure-form-aligned">
 		<fieldset>
 			<div class="pure-control-group">
-				<label for="mobil">Mobil:</label> <input type="text" name="mobil" />
+				<label for="mobil">Mobil:</label> <input type="text" name="mobil" value = "${loginskjema.mobil}" /><font color="red">${loginskjema.mobilFeilmelding}</font><br>
 			</div>
 			<div class="pure-control-group">
 				<label for="passord">Passord:</label> <input type="password"
-					name="passord" />
+					name="passord" value = "${loginskjema.pass}"/><font color="red">${loginskjema.passFeilmelding}</font><br>
 			</div>
 			<div class="pure-controls">
 				<button type="submit" class="pure-button pure-button-primary">Logg
